@@ -49,12 +49,12 @@ public class MessagePanel extends JPanel {
 		add(senderText, gbc_senderText);
 		senderText.setColumns(10);
 
-		JLabel lblSubject = new JLabel("Subject:");
-		GridBagConstraints gbc_lblSubject = new GridBagConstraints();
-		gbc_lblSubject.insets = new Insets(0, 0, 5, 0);
-		gbc_lblSubject.gridx = 0;
-		gbc_lblSubject.gridy = 2;
-		add(lblSubject, gbc_lblSubject);
+		JLabel subjectLbl = new JLabel("Subject:");
+		GridBagConstraints gbc_subjectLbl = new GridBagConstraints();
+		gbc_subjectLbl.insets = new Insets(0, 0, 5, 0);
+		gbc_subjectLbl.gridx = 0;
+		gbc_subjectLbl.gridy = 2;
+		add(subjectLbl, gbc_subjectLbl);
 
 		subjectText = new JTextField();
 		subjectText.setEditable(false);
@@ -66,12 +66,12 @@ public class MessagePanel extends JPanel {
 		add(subjectText, gbc_subjectText);
 		subjectText.setColumns(10);
 
-		JLabel lblDate = new JLabel("Date:");
-		GridBagConstraints gbc_lblDate = new GridBagConstraints();
-		gbc_lblDate.insets = new Insets(0, 0, 5, 0);
-		gbc_lblDate.gridx = 0;
-		gbc_lblDate.gridy = 4;
-		add(lblDate, gbc_lblDate);
+		JLabel dateLbl = new JLabel("Date:");
+		GridBagConstraints gbc_dateLbl = new GridBagConstraints();
+		gbc_dateLbl.insets = new Insets(0, 0, 5, 0);
+		gbc_dateLbl.gridx = 0;
+		gbc_dateLbl.gridy = 4;
+		add(dateLbl, gbc_dateLbl);
 
 		dateText = new JTextField();
 		dateText.setEditable(false);
@@ -83,12 +83,12 @@ public class MessagePanel extends JPanel {
 		add(dateText, gbc_dateText);
 		dateText.setColumns(10);
 
-		JLabel lblRecipients = new JLabel("Recipients:");
-		GridBagConstraints gbc_lblRecipients = new GridBagConstraints();
-		gbc_lblRecipients.insets = new Insets(0, 0, 5, 0);
-		gbc_lblRecipients.gridx = 0;
-		gbc_lblRecipients.gridy = 6;
-		add(lblRecipients, gbc_lblRecipients);
+		JLabel recipientsLbl = new JLabel("Recipients:");
+		GridBagConstraints gbc_recipientsLbl = new GridBagConstraints();
+		gbc_recipientsLbl.insets = new Insets(0, 0, 5, 0);
+		gbc_recipientsLbl.gridx = 0;
+		gbc_recipientsLbl.gridy = 6;
+		add(recipientsLbl, gbc_recipientsLbl);
 
 		recipientsList = new JList();
 		GridBagConstraints gbc_recipientsList = new GridBagConstraints();
@@ -98,12 +98,12 @@ public class MessagePanel extends JPanel {
 		gbc_recipientsList.gridy = 7;
 		add(recipientsList, gbc_recipientsList);
 
-		JLabel lblText = new JLabel("Text:");
-		GridBagConstraints gbc_lblText = new GridBagConstraints();
-		gbc_lblText.insets = new Insets(0, 0, 5, 0);
-		gbc_lblText.gridx = 0;
-		gbc_lblText.gridy = 8;
-		add(lblText, gbc_lblText);
+		JLabel textLbl = new JLabel("Text:");
+		GridBagConstraints gbc_textLbl = new GridBagConstraints();
+		gbc_textLbl.insets = new Insets(0, 0, 5, 0);
+		gbc_textLbl.gridx = 0;
+		gbc_textLbl.gridy = 8;
+		add(textLbl, gbc_textLbl);
 
 		messageBody = new JTextPane();
 		messageBody.setEditable(false);
